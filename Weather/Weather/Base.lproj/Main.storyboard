@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
@@ -48,13 +49,41 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Ecw-tp-TWb" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="6Fu-Gi-3ck"/>
+                            <constraint firstItem="Ecw-tp-TWb" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="CeW-49-PYC"/>
                             <constraint firstItem="Ecw-tp-TWb" firstAttribute="top" secondItem="98j-5J-O6t" secondAttribute="bottom" constant="20" id="DpZ-Eg-unR"/>
+                            <constraint firstItem="Ecw-tp-TWb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="IpS-Js-hI4"/>
                             <constraint firstItem="98j-5J-O6t" firstAttribute="height" relation="lessThanOrEqual" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.4" id="NXw-w3-QBq"/>
                             <constraint firstAttribute="trailing" secondItem="Ecw-tp-TWb" secondAttribute="trailing" id="Xce-LR-183"/>
                             <constraint firstItem="98j-5J-O6t" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="aA9-84-gTg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Ecw-tp-TWb" secondAttribute="bottom" id="d2F-V4-VZ4"/>
                             <constraint firstAttribute="centerX" secondItem="98j-5J-O6t" secondAttribute="centerX" id="fa3-c3-cfb"/>
+                            <constraint firstAttribute="centerY" secondItem="98j-5J-O6t" secondAttribute="centerY" id="m4k-Td-NLA"/>
+                            <constraint firstItem="98j-5J-O6t" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.45" id="mWP-YO-ey8"/>
+                            <constraint firstItem="98j-5J-O6t" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="10" id="zaj-Ky-SmW"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="m4k-Td-NLA"/>
+                                <exclude reference="mWP-YO-ey8"/>
+                                <exclude reference="zaj-Ky-SmW"/>
+                                <exclude reference="CeW-49-PYC"/>
+                                <exclude reference="IpS-Js-hI4"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="NXw-w3-QBq"/>
+                                <exclude reference="aA9-84-gTg"/>
+                                <exclude reference="fa3-c3-cfb"/>
+                                <include reference="m4k-Td-NLA"/>
+                                <include reference="mWP-YO-ey8"/>
+                                <include reference="zaj-Ky-SmW"/>
+                                <exclude reference="6Fu-Gi-3ck"/>
+                                <include reference="CeW-49-PYC"/>
+                                <exclude reference="DpZ-Eg-unR"/>
+                                <include reference="IpS-Js-hI4"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
